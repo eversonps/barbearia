@@ -1,0 +1,1 @@
+2021/09/14 17:31:16 [error] 3420#3228: *7 CreateFile() "C:/Users/user/Desktop/escola/alura/front_end/barbearia/favicon.ico" failed (2: O sistema não pode encontrar o arquivo especificado), client: 127.0.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/"

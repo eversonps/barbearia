@@ -1,0 +1,354 @@
+/* Para todas as páginas*/
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+header{
+    background: #BBBBBB;
+    padding: 20px 0;
+}
+
+.caixa{
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+}
+
+nav{
+    position: absolute;
+    top: 110px;
+    right: 0;
+}
+
+nav li{
+    display: inline;
+    margin: 0 0 0 15px;
+}
+
+nav a{
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+nav a:hover{
+    text-decoration: underline;
+    color: #C78C19;
+}
+
+footer{
+    background: url(bg.jpg);
+    padding: 40px;;
+    text-align: center;
+}
+
+footer p{
+    color: white;
+}
+
+/* Index */
+
+.titulo-sections{
+    margin-bottom: 1em;
+    font-size: 2em;
+    text-align: center;
+}
+
+p{
+    margin-bottom: 1em;
+    font-size: 19px;
+}
+
+em{
+    font-style: italic;
+}
+
+strong{
+    font-weight: bold;
+}
+
+.sobre{
+    padding: 3em 0;
+    width: 940px;
+    margin: 0 auto;
+    background: #FEFEFE;
+}
+
+.utensilios{
+    width: 100px;
+    float: left;
+    padding: 0 20px 20px 0;
+}
+
+.mapa{
+    clear:left;
+    padding: 3em 0;
+    text-align: center;
+    background: linear-gradient(#FEFEFE, #888888);
+}
+
+.mapa p{
+    padding-bottom: 1em;
+}
+.loc{
+    height: 300px;
+    width: 940px;
+}
+
+.beneficios{
+    padding: 3em 0;
+    background: #888888;
+}
+
+.beneficios-itens{
+    width: 640px;
+    margin: 0 auto;
+}
+
+.lista{
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+    line-height: 1.5;
+}
+
+.itens:first-child{
+    font-weight: bold;
+}
+
+.itens:before{
+     content: "★ ";
+}
+
+.img-beneficios{
+    width: 60%;
+    transition: 0.3s;
+    cursor: pointer;
+    border-radius: 10px;
+    opacity: 1;
+}
+
+.img-beneficios:hover{
+    box-shadow: 10px 5px 15px black;
+    transform: scale(1.1);
+    opacity: 0.3;
+}
+
+.video{
+    margin-top: 3em;
+    text-align: center;
+    padding-bottom: 3em;
+}
+
+iframe{
+    height: 315px;
+    width: 600px;
+}
+
+/* Produtos */
+
+.principal{
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.principal .cortes{
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 13px;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border: 2px solid #000000;
+    border-radius: 10px;
+}
+
+.principal .cortes:hover {
+    border-color: #C78C19;
+}
+
+.principal .cortes:active {
+    border-color: #088C19;
+}
+
+.principal .cortes:hover h2 {
+    font-size: 32px;
+}
+
+.principal-titulo{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.principal-desc{
+    font-size: 18px;
+}
+
+.principal-preco{
+    margin-top: 10px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/* Contato */
+
+.textos{
+    display: block;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.input-textos{
+    display: block;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    width: 50%;
+}
+
+fieldset#radios{
+    margin-bottom: 20px;
+}
+
+.textos-radios{
+    display: block;
+    margin: 5px 0;
+}
+
+.texto-check{
+    display: block;
+    margin: 20px 0;
+}
+
+.enviar{
+    width: 40%;
+    height: 50px;
+    color: white;
+    background: orange;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.5s all;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+
+.enviar:hover{
+    background:darkorange;
+    transform: scale(1.03);
+}
+
+table{
+    margin-top: 40px;
+    border: solid 2px;
+}
+
+th{
+    color: white;
+    background: gray;
+}
+
+.cabp{
+    background: #555555;
+}
+
+th, td{
+    border: 1px solid black ;
+    padding: 8px 15px;
+}
+
+@media screen and (max-width: 480px){
+
+    /* para todas as páginas */
+    .beneficios-itens, .loc, .video, iframe, .principal {
+        width: auto;
+        padding: 16px;
+    }
+
+    h1{
+        text-align: center;
+    }
+
+    .caixa {
+        text-align: center;
+        width: auto;
+        padding: 16px;
+    }
+
+    nav {
+        position: static;
+        margin-top: 30px;
+        text-align: center;
+    }
+
+    nav a{
+        font-size: 20px;
+    }
+
+    /* Index */
+
+    .titulo-sections{
+        font-size: 25px;
+        font-weight: bold;
+    }
+
+    .sobre{
+        width: auto;
+        padding: 16px;
+        margin-top: 3em;
+    }
+
+    .mapa p{
+        padding: 20px;
+    }
+
+    .img-beneficios{
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    .lista{
+        width: 100%;
+    }
+
+    /* Produtos */
+
+    .principal .cortes{
+        width: 90%;
+        display: block;
+        padding: 10px;
+        margin: 20px auto;
+    }
+
+    /* Contato */
+
+    form{
+        margin-top: 20px;
+    }
+
+    .input-textos{
+        width: 85%;
+    }
+
+    .horariofield select{
+        width: 98%;
+        height: 30px;
+    }
+
+    .enviar{
+        width: 98%;
+    }
+
+    .enviar:hover{
+        background: orange;
+        transform: scale(1);
+    }
+
+    table{
+        margin: 40px auto;
+    }
+}
